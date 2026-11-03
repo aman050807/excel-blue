@@ -351,7 +351,8 @@ a.egh-footer-line:hover { text-decoration: underline; }
 .egh-prod-brand { font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--egh-azure); font-weight: 600; margin: 0 0 5px; }
 .egh-prod-name { font-family: var(--ds-font-display); font-size: 16.5px; color: var(--egh-navy); margin: 0 0 6px; }
 .egh-prod-desc { font-size: 12.5px; line-height: 1.55; color: var(--egh-navy-2); margin: 0; }
-.egh-countries { display: grid; grid-template-columns: 1fr; gap: 12px; max-width: 260px; margin: 28px auto 0; }
+.egh-countries { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; max-width: 300px; margin: 28px auto 0; }
+@media (max-width: 767px) { .egh-country { padding: 10px 10px 8px; gap: 6px; border-radius: 12px; } .egh-country-name { font-size: 13px; } .egh-country-flag { border-radius: 6px; } }
 .egh-country {
     display: flex; flex-direction: column; align-items: center; gap: 10px;
     border: 1px solid var(--egh-hairline); border-radius: 16px; padding: 18px 16px 14px;
