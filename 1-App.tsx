@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react';
 import './style.css';
 import worldMap from './worldmap.svg';
+import globeIcon from './globe.svg';
+import handshakeIcon from './handshake.svg';
 import pageWash from './page-wash.png';
 import logo from './logo.png';
 import shailendra from './shailendra.png';
@@ -63,9 +65,9 @@ const pillars = [
 ];
 
 const pillarIcons = [
-    <svg key="i1" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"><circle cx="13" cy="13" r="9.5" /><ellipse cx="13" cy="13" rx="4.2" ry="9.5" /><path d="M3.5 10.5h19M3.5 15.5h19" /></svg>,
-    <svg key="i2" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"><circle cx="9.5" cy="13" r="6" /><circle cx="16.5" cy="13" r="6" /></svg>,
-    <svg key="i3" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M4 20.5h18" /><path d="M6.5 16.5l4.5-5 3.5 3 5.5-6.5" /><path d="M15.5 8H20v4.5" /></svg>,
+    <img key="i1" className="egh-pillar-img" src={globeIcon} alt="" />,
+    <img key="i2" className="egh-pillar-img" src={handshakeIcon} alt="" />,
+    <svg key="i3" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"><path d="M4 20.5h18" /><path d="M6.5 16.5l4.5-5 3.5 3 5.5-6.5" /><path d="M15.5 8H20v4.5" /></svg>,
 ];
 
 import { productCategories } from './products';
@@ -282,7 +284,7 @@ function HomePage() {
             </div>
         </section>
 
-        <section className="egh-section">
+        <section className="egh-section egh-range">
             <p className="egh-eyebrow">The range</p>
             <h2 className="egh-h2">Healthcare solutions for diverse markets</h2>
             <p className="egh-lede2">A curated portfolio of certified medical and healthcare products across oral care, dermatology, derma-cosmetics and pharma OTC categories.</p>
@@ -330,11 +332,17 @@ function HomePage() {
 function AboutPage() {
     return <>
         <PageHead eyebrow="Our story" title="Finding inspiration in every turn" />
-        <section className="egh-section egh-section-tight">
-            <p className="egh-body">Excel Global Health was founded with a vision to bring innovative healthcare technologies and quality products to a wider global market. Drawing inspiration from India&rsquo;s long-standing contribution to medicine and healthcare, we strive to build meaningful connections between manufacturers, distributors, healthcare professionals, and international markets.</p>
-            <p className="egh-body">Our journey is driven by a commitment to making trusted and innovative healthcare solutions more accessible, helping improve quality of life while creating stronger partnerships across borders.</p>
-            <blockquote className="egh-quote">&ldquo;The secret of health for both mind and body is not to mourn for the past, or anticipate troubles, but to live in the present moment wisely and earnestly.&rdquo;<span className="egh-quote-attr">&mdash; Buddha</span></blockquote>
-            <blockquote className="egh-quote">&ldquo;Technology will not replace great doctors, but technology in the hands of great doctors can be transformational.&rdquo;</blockquote>
+        <section className="egh-section egh-section-tight egh-story">
+            <div className="egh-story-cols">
+                <div className="egh-story-text">
+                    <p className="egh-body">Excel Global Health was founded with a vision to bring innovative healthcare technologies and quality products to a wider global market. Drawing inspiration from India&rsquo;s long-standing contribution to medicine and healthcare, we strive to build meaningful connections between manufacturers, distributors, healthcare professionals, and international markets.</p>
+                    <p className="egh-body">Our journey is driven by a commitment to making trusted and innovative healthcare solutions more accessible, helping improve quality of life while creating stronger partnerships across borders.</p>
+                </div>
+                <div className="egh-story-quotes">
+                    <blockquote className="egh-quote">&ldquo;The secret of health for both mind and body is not to mourn for the past, or anticipate troubles, but to live in the present moment wisely and earnestly.&rdquo;<span className="egh-quote-attr">&mdash; Buddha</span></blockquote>
+                    <blockquote className="egh-quote">&ldquo;Technology will not replace great doctors, but technology in the hands of great doctors can be transformational.&rdquo;</blockquote>
+                </div>
+            </div>
         </section>
 
         <section className="egh-section">
