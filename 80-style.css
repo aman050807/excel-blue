@@ -693,4 +693,64 @@ dialog.egh-dlg::backdrop { background: rgba(13, 27, 46, 0.45); cursor: pointer; 
 .egh-leader-name { margin: 18px 0 10px; }
 @media (min-width: 768px) {
     .egh-leaders { margin: 56px auto 8px; gap: 48px; max-width: 880px; }
+}
+
+/* ===== About page redesign (scoped) ===== */
+.egh-about .egh-pagehead { padding-top: 56px; }
+.egh-about .egh-pagehead-title { font-size: clamp(30px, 4.2vw, 40px); }
+.egh-about .egh-pagehead-title::after,
+.egh-about .egh-mgmt-title::after {
+    content: ""; display: block; width: 64px; height: 2px; border-radius: 2px;
+    background: var(--egh-azure); margin: 18px auto 0; opacity: .85;
+}
+
+/* Story on a white full-bleed panel, editorial left-aligned text */
+.egh-about .egh-story {
+    margin: 44px -24px 0; padding: 52px 24px 56px; text-align: left;
+    background: #ffffff; border-top: 1px solid var(--egh-hairline); border-bottom: 1px solid var(--egh-hairline);
+}
+.egh-about .egh-story-cols { max-width: 1060px; margin: 0 auto; }
+.egh-about .egh-story .egh-body { text-align: left; max-width: none; margin: 0; font-size: 15.5px; }
+.egh-about .egh-story .egh-body + .egh-body { margin-top: 18px; }
+@media (min-width: 768px) {
+    .egh-about .egh-story { margin: 56px -36px 0; padding: 72px 48px 80px; }
+    .egh-about .egh-story .egh-body { font-size: 16.5px; line-height: 1.8; }
+    .egh-about .egh-story-text .egh-body:first-child::first-letter {
+        font-family: var(--ds-font-display); font-size: 3.1em; line-height: .9;
+        float: left; padding: 4px 12px 0 0; color: var(--egh-azure);
     }
+}
+
+/* Quotes as designed cards */
+.egh-about .egh-story-quotes { justify-content: center; }
+.egh-about .egh-quote {
+    position: relative; margin: 0; max-width: none; padding: 28px 28px 26px;
+    font-size: 18px; border: none; border-radius: 18px; text-align: left;
+    box-shadow: 0 16px 40px rgb(13 43 82 / .10);
+}
+.egh-about .egh-quote::before {
+    content: ""; display: block; width: 36px; height: 3px; border-radius: 3px;
+    background: var(--egh-azure); margin-bottom: 16px;
+}
+.egh-about .egh-quote-feature {
+    background: linear-gradient(155deg, #0d2b52 0%, #164a8a 100%); color: #ffffff;
+}
+.egh-about .egh-quote-feature::before { background: #7fb3f2; }
+.egh-about .egh-quote-feature .egh-quote-attr { color: rgb(233 241 252 / .75); }
+.egh-about .egh-quote-soft {
+    background: #f2f7fe; color: var(--egh-navy); border-left: 3px solid var(--egh-azure);
+}
+.egh-about .egh-quote-soft .egh-quote-attr { color: var(--egh-navy-2); }
+
+/* Management as person cards */
+.egh-about .egh-leaders { max-width: 920px; align-items: stretch; }
+.egh-about .egh-leader {
+    background: #ffffff; border: 1px solid var(--egh-hairline); border-radius: 20px;
+    padding: 36px 30px 32px; box-shadow: 0 14px 36px rgb(13 43 82 / .07);
+}
+.egh-about .egh-leader-img {
+    width: 140px; height: 140px; border: 3px solid #ffffff;
+    box-shadow: 0 0 0 2px var(--egh-azure), 0 10px 24px rgb(13 43 82 / .14);
+}
+.egh-about .egh-leader-name { font-size: 21px; margin: 22px 0 12px; }
+.egh-about .egh-leader-bio { font-size: 14px; line-height: 1.7; max-width: 340px; }
