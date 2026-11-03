@@ -85,7 +85,7 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Dermatone Lightening Gel': phDermatoneGel,
     'Dermatone Brightening Bar': phDermatoneBar,
     'Dermatone Daily Moisturising Face Cream': phDermatoneFaceCream,
-    'Dermacorn Liquid': phDermacorn,
+    'Dermacorn Solution': phDermacorn,
     'Euclear Baby RollOn': phEuclearRollon,
     'Euclear Throat Lozenges': phEuclearLozenges,
     'Pain Off Dental Gel': phPainoff,
