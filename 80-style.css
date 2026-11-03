@@ -268,16 +268,14 @@
 .egh-footer-line { font-size: 15px; color: #1a1a1a; margin: 0; text-decoration: none; }
 a.egh-footer-line:hover { text-decoration: underline; }
 .egh-footer-copy { font-size: 13px; color: #4a4a4a; margin: 0; }
-.egh-review-wrap { margin: 0 -24px -24px; padding: 32px 24px 40px; }
 .egh-contact-grid { display: grid; grid-template-columns: 1fr; gap: 24px; max-width: 720px; margin: 32px auto 0; text-align: left; }
 .egh-contact-label { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--egh-azure); font-weight: 600; margin: 0 0 6px; }
 .egh-contact-value { font-size: 14px; line-height: 1.6; color: var(--egh-navy); margin: 0; }
 .egh-contact-value a { color: var(--egh-navy); text-decoration-color: #c4d3e6; }
-.egh-smallprint { font-size: 11px; color: #9aa8bb; margin: 24px 0 0; text-align: center; }
 
 @media (min-width: 768px) {
     .egh-page {
-    margin: 0 -24px; padding: 0 24px;
+    margin: 0 -36px; padding: 0 36px;
     background-size: 1280px auto; background-repeat: repeat; background-position: center top;
 }
 
@@ -291,7 +289,6 @@ a.egh-footer-line:hover { text-decoration: underline; }
     .egh-footer-card { flex-direction: row; justify-content: space-between; align-items: flex-start; padding: 40px 52px 36px; }
     .egh-footer-logo { height: 84px; }
     .egh-footer-right { text-align: right; }
-    .egh-review-wrap { margin: 0 -36px -36px; padding: 36px 36px 44px; }
     .egh-factrow {
         grid-template-columns: 1.12fr 1fr; grid-template-rows: 1fr 1fr;
         gap: 18px; max-width: 980px; margin-top: 52px;
@@ -399,10 +396,6 @@ a.egh-footer-line:hover { text-decoration: underline; }
 .egh-partner-soon {
     font-family: var(--ds-font-display); font-size: 20px; color: var(--egh-navy-2); margin: 0;
 }
-.egh-reviewnotes { border: 1px dashed #c8d6e6; border-radius: 14px; background: #fbfdff; max-width: 680px; margin: 44px auto 0; padding: 22px 24px; text-align: left; }
-.egh-reviewnotes-title { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--egh-azure); font-weight: 600; margin: 0 0 10px; }
-.egh-reviewnotes-list { margin: 0; padding-left: 18px; }
-.egh-reviewnotes-list li { font-size: 12.5px; line-height: 1.6; color: var(--egh-navy-2); margin: 0 0 8px; }
 @media (min-width: 768px) {
     .egh-partner-bento { grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .egh-partner-card:first-child:nth-last-child(odd) { grid-column: span 2; }
