@@ -22,7 +22,7 @@
 
 .egh-hero-wrap { margin: 0 -24px; container-type: inline-size; }
 .egh-hero {
-    margin: 0; position: relative; overflow: hidden;
+    margin: 0; position: relative; overflow: hidden; animation: eghHeroBoxD 21s ease-in-out infinite;
     background: linear-gradient(120deg, #9cc6f6 0%, #5476ea 58%, #47add4 100%);
     border-bottom: 1px solid var(--egh-hairline);
 }
@@ -38,6 +38,11 @@
 .egh-hero-slide:nth-child(4) { animation-delay: 11.8s; }
 .egh-hero-slide:nth-child(5) { animation-delay: 14.7s; }
 .egh-hero-slide:nth-child(6) { animation-delay: 17.6s; }
+@keyframes eghHeroBoxD {
+    0%, 26.19% { min-height: 600px; max-height: 2000px; }
+    31.429%, 98.5% { min-height: calc(100cqw * 2 / 5); max-height: calc(100cqw * 2 / 5); }
+    100% { min-height: 600px; max-height: 2000px; }
+}
 @keyframes eghHeroSlideMap {
     0% { opacity: 1; } 27% { opacity: 1; }
     28.571% { opacity: 0; } 97% { opacity: 0; } 98.5% { opacity: 1; } 100% { opacity: 1; }
@@ -47,7 +52,7 @@
     14.3% { opacity: 0; } 100% { opacity: 0; }
 }
 .egh-hero-slide-map { background: linear-gradient(120deg, #9cc6f6 0%, #5476ea 58%, #47add4 100%); }
-.egh-hero-slide-img { background-size: contain; background-repeat: no-repeat; background-position: center center; background-color: #dcebfa; }
+.egh-hero-slide-img { background-size: 100% 100%; background-repeat: no-repeat; background-position: center center; background-color: transparent; }
 .egh-hero-mapwrap { position: absolute; top: 50%; right: 2%; transform: translateY(-50%); width: 60%; aspect-ratio: 2 / 1; }
 .egh-hero-map { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.85; }
 .egh-hero-arcs { position: absolute; inset: 0; width: 100%; height: 100%; }
@@ -94,14 +99,6 @@
     100% { opacity: 1; visibility: visible; }
 }
 
-.egh-hero-veil {
-    position: absolute; inset: 0; pointer-events: none;
-    background: linear-gradient(100deg, rgb(241 247 255 / .97) 0%, rgb(236 244 255 / .92) 30%, rgb(230 240 255 / .55) 50%, rgb(226 240 255 / 0) 68%);
-    animation: eghHeroVeil 21s ease-in-out infinite;
-}
-@keyframes eghHeroVeil {
-    0%, 26.19% { opacity: 1; } 28.095%, 96% { opacity: 0; } 99%, 100% { opacity: 1; }
-}
 .egh-arc-1, .egh-arc-dot-1 { animation-delay: 0s; }
 .egh-arc-2, .egh-arc-dot-2 { animation-delay: .5s; }
 .egh-arc-3, .egh-arc-dot-3 { animation-delay: 1s; }
@@ -117,7 +114,7 @@
     .egh-hero-inner { animation-name: eghHeroTextM; }
     @keyframes eghHeroBoxM {
         0%, 26.19% { min-height: 0; max-height: 2000px; }
-        31.429%, 98.5% { min-height: calc(100cqw * 926 / 1600); max-height: calc(100cqw * 926 / 1600); }
+        31.429%, 98.5% { min-height: calc(100cqw * 2 / 5); max-height: calc(100cqw * 2 / 5); }
         100% { min-height: 0; max-height: 2000px; }
     }
     @keyframes eghHeroTextM {
@@ -128,16 +125,32 @@
         100% { opacity: 1; visibility: visible; max-height: 800px; padding-top: 72px; padding-bottom: 64px; overflow: hidden; }
     }
     .egh-hero-mapwrap { top: auto; bottom: -6%; right: -18%; transform: none; width: 150%; }
-    .egh-hero-veil { background: linear-gradient(180deg, rgb(241 247 255 / .96) 0%, rgb(236 244 255 / .90) 45%, rgb(231 241 255 / .55) 66%, rgb(228 240 255 / .12) 84%); }
-    .egh-hero-map { opacity: 0.38; }
+        .egh-hero-map { opacity: 0.38; }
     .egh-hero-arcs { opacity: 0.8; }
     .egh-hero-slide-art { background-position: center center; }
 }
+
+@media (min-width: 768px) and (max-width: 1039px) {
+    .egh-hero { animation: eghHeroBoxT 21s ease-in-out infinite; }
+    .egh-hero-inner { animation-name: eghHeroTextT; }
+    @keyframes eghHeroBoxT {
+        0%, 26.19% { min-height: 0; max-height: 2000px; }
+        31.429%, 98.5% { min-height: calc(100cqw * 2 / 5); max-height: calc(100cqw * 2 / 5); }
+        100% { min-height: 0; max-height: 2000px; }
+    }
+    @keyframes eghHeroTextT {
+        0% { opacity: 1; visibility: visible; max-height: 800px; padding-top: 72px; padding-bottom: 64px; overflow: hidden; }
+        26.19% { opacity: 1; visibility: visible; max-height: 800px; padding-top: 72px; padding-bottom: 64px; overflow: hidden; }
+        28.095% { opacity: 0; visibility: hidden; max-height: 0; padding-top: 0; padding-bottom: 0; overflow: hidden; }
+        97.62% { opacity: 0; visibility: hidden; max-height: 0; padding-top: 0; padding-bottom: 0; overflow: hidden; }
+        100% { opacity: 1; visibility: visible; max-height: 800px; padding-top: 72px; padding-bottom: 64px; overflow: hidden; }
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     .egh-hero-slide { animation: none; opacity: 0; }
     .egh-hero-slide:first-child { opacity: 1; }
-    .egh-hero, .egh-hero-inner, .egh-hero-veil { animation: none; }
-    .egh-hero-origin-ring { animation: none; opacity: 0; }
+    .egh-hero, .egh-hero-inner,     .egh-hero-origin-ring { animation: none; opacity: 0; }
     .egh-arc { animation: none; opacity: 0.7; stroke-dashoffset: 0; }
     .egh-arc-dot { animation: none; opacity: 1; }
 }
@@ -346,13 +359,8 @@ a.egh-footer-line:hover { text-decoration: underline; }
 }
 .egh-country-name { font-size: 15px; font-weight: 600; color: var(--egh-navy); }
 .egh-partner-country { scroll-margin-top: 90px; }
-@keyframes eghHeroBoxD {
-    0%, 28.571% { min-height: 600px; max-height: 2000px; }
-    31.429%, 98.5% { min-height: calc(100cqw * 926 / 1600); max-height: calc(100cqw * 926 / 1600); }
-    100% { min-height: 600px; max-height: 2000px; }
-}
 @media (min-width: 768px) {
-    .egh-hero { min-height: 600px; animation: eghHeroBoxD 21s ease-in-out infinite; }
+    .egh-hero { min-height: 600px; }
     .egh-prodgrid > * { flex: 0 0 calc((100% - 40px) / 3); }
     .egh-countries { grid-template-columns: repeat(2, 1fr); max-width: 500px; gap: 16px; }
 }
@@ -597,6 +605,24 @@ dialog.egh-dlg::backdrop { background: rgba(13, 27, 46, 0.45); cursor: pointer; 
     .egh-dlg-name { font-size: 21px; }
     .egh-catnav { gap: 6px; }
     .egh-catnav-link { font-size: 11.5px; padding: 8px 13px; }
+}
+
+
+@media (min-width: 768px) and (max-width: 1039px) {
+    .egh-hero { animation: eghHeroBoxT 21s ease-in-out infinite; }
+    .egh-hero-inner { animation-name: eghHeroTextT; }
+    @keyframes eghHeroBoxT {
+        0%, 26.19% { min-height: 0; max-height: 2000px; }
+        31.429%, 98.5% { min-height: calc(100cqw * 2 / 5); max-height: calc(100cqw * 2 / 5); }
+        100% { min-height: 0; max-height: 2000px; }
+    }
+    @keyframes eghHeroTextT {
+        0% { opacity: 1; visibility: visible; max-height: 800px; padding-top: 72px; padding-bottom: 64px; overflow: hidden; }
+        26.19% { opacity: 1; visibility: visible; max-height: 800px; padding-top: 72px; padding-bottom: 64px; overflow: hidden; }
+        28.095% { opacity: 0; visibility: hidden; max-height: 0; padding-top: 0; padding-bottom: 0; overflow: hidden; }
+        97.62% { opacity: 0; visibility: hidden; max-height: 0; padding-top: 0; padding-bottom: 0; overflow: hidden; }
+        100% { opacity: 1; visibility: visible; max-height: 800px; padding-top: 72px; padding-bottom: 64px; overflow: hidden; }
+    }
 }
 
 @media (prefers-reduced-motion: reduce) { .egh-hero { animation: none !important; } }
