@@ -13,6 +13,9 @@ import slideCelex from './slide-celex.jpg';
 import slideSorion from './slide-sorion.jpg';
 import slideRubit from './slide-rubit.jpg';
 import slideGroupPharma from './slide-grouppharma.jpg';
+import gpFacePlate from './85-gp-face-plate.png';
+import entFamilyPlate from './86-ent-family-plate.png';
+import entWomanPlate from './87-ent-woman-plate.png';
 import bannerSorion from './Atrimed.jpeg';
 import bannerGp from './GroupPharma.jpeg';
 import flagOman from './Flag_of_Oman.svg.webp';
@@ -251,11 +254,16 @@ function HomePage() {
                         </svg>
                     </div>
                 </div>
-                <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideEnt})` }} />
+                <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideEnt})` }}>
+                    <img className="egh-plate egh-plate-ent-family" src={entFamilyPlate} alt="" />
+                    <img className="egh-plate egh-plate-ent-woman" src={entWomanPlate} alt="" />
+                </div>
                 <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideCelex})` }} />
                 <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideSorion})` }} />
                 <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideRubit})` }} />
-                <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideGroupPharma})` }} />
+                <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideGroupPharma})` }}>
+                    <img className="egh-plate egh-plate-gp-face" src={gpFacePlate} alt="" />
+                </div>
             </div>
             <div className="egh-hero-veil" aria-hidden="true" />
             <div className="egh-hero-inner">
