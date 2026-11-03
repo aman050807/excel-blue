@@ -330,7 +330,7 @@ function HomePage() {
 }
 
 function AboutPage() {
-    return <>
+    return <div className="egh-about">
         <PageHead eyebrow="Our story" title="Finding inspiration in every turn" />
         <section className="egh-section egh-section-tight egh-story">
             <div className="egh-story-cols">
@@ -339,15 +339,15 @@ function AboutPage() {
                     <p className="egh-body">Our journey is driven by a commitment to making trusted and innovative healthcare solutions more accessible, helping improve quality of life while creating stronger partnerships across borders.</p>
                 </div>
                 <div className="egh-story-quotes">
-                    <blockquote className="egh-quote">&ldquo;The secret of health for both mind and body is not to mourn for the past, or anticipate troubles, but to live in the present moment wisely and earnestly.&rdquo;<span className="egh-quote-attr">&mdash; Buddha</span></blockquote>
-                    <blockquote className="egh-quote">&ldquo;Technology will not replace great doctors, but technology in the hands of great doctors can be transformational.&rdquo;</blockquote>
+                    <blockquote className="egh-quote egh-quote-feature">&ldquo;The secret of health for both mind and body is not to mourn for the past, or anticipate troubles, but to live in the present moment wisely and earnestly.&rdquo;<span className="egh-quote-attr">&mdash; Buddha</span></blockquote>
+                    <blockquote className="egh-quote egh-quote-soft">&ldquo;Technology will not replace great doctors, but technology in the hands of great doctors can be transformational.&rdquo;</blockquote>
                 </div>
             </div>
         </section>
 
         <section className="egh-section">
             <p className="egh-eyebrow">Excel management</p>
-            <h2 className="egh-h2">The people behind Excel</h2>
+            <h2 className="egh-h2 egh-mgmt-title">The people behind Excel</h2>
             <div className="egh-leaders">
                 {leaders.map((l) => (
                     <div className="egh-leader" key={l.name}>
@@ -358,7 +358,7 @@ function AboutPage() {
                 ))}
             </div>
         </section>
-    </>;
+    </div>;
 }
 
 function ProductCard({ p }: { p: ProductDetail }) {
