@@ -209,20 +209,6 @@ function Chrome({ children }: { children: ReactNode }) {
                 </div>
             </div>
         </footer>
-        <div className="egh-review-wrap">
-            <div className="egh-reviewnotes">
-                <p className="egh-reviewnotes-title">Open items to confirm</p>
-                <ul className="egh-reviewnotes-list">
-                    
-                    <li>Distributor lists, logos and info updated from material Aman supplied (25 Oct), names kept exactly as he listed them; Bahrain shows Coming soon.</li>
-                    <li>Sorion and Group Pharmaceuticals company claims (30+ countries, Dermatest certification, 40+ years) are partner copy from your current site - Aman is confirming these with his dad.</li>
-                    <li>Enquiries go via the direct phone and email links shown - no contact form, per your dad (2 Nov).</li>
-                    <li>Products page order and grouping now follow the product list sheet you shared (2 Nov); product names and descriptions are unchanged.</li>
-                    <li>Pending your confirmation from that sheet: rows with no matching card yet, which need your confirmation and product details - SHY OR, SHY Gel, Pediflor Kidz flavours, Pediflor Day &amp; Night Kit, Pediflor 1000 ppm, Densive Adhesive Cream, Guard Oral Rinse Mouthwash, Celex Spot Reduction Aqua Touch vs Silky Feel (the sheet lists both; the site currently has one Spot Reduction card), Celex Moisturising Cream with Ceramide &amp; Urea, Dermascar Gel, Celex Bar for Acne, Celex Moisturising Bar, Normal Saline Nasal Drops. Sheet names that differ from site cards (sheet: Dermatone Lightening gel, Rubit Pain Ointment, Dermacorn Solution; site: Brightening Gel, Pain Balm, Liquid) and Sorion&apos;s company name (sheet: Atrimed Pharmaceuticals Ltd; site text: Atrimed Biotech) also need your confirmation.</li>
-                </ul>
-            </div>
-            <p className="egh-smallprint">Draft v11 for review · Content from excel-web-six.vercel.app · 2 November 2026</p>
-        </div>
     </div>;
 }
 
