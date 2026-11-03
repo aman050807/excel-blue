@@ -88,7 +88,7 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Dermacorn Liquid': phDermacorn,
     'Euclear Baby RollOn': phEuclearRollon,
     'Euclear Throat Lozenges': phEuclearLozenges,
-    'Pain-Off Clove-oil Dental Gel': phPainoff,
+    'Pain Off Dental Gel': phPainoff,
     'Rubit Pain Ointment': phRubitBalm,
     'Rubit Cool Gel': phRubitCool,
     'Rubit Arthro': phRubitArthro,
