@@ -338,7 +338,7 @@ a.egh-footer-line:hover { text-decoration: underline; }
     border-top: 1px solid var(--egh-hairline); border-bottom: 1px solid var(--egh-hairline);
 }
 .egh-lede2 { font-size: 15px; line-height: 1.7; color: var(--egh-navy-2); max-width: 620px; margin: 12px auto 0; text-align: center; }
-.egh-cat { margin: 56px auto 0; max-width: 900px; text-align: center; }
+.egh-cat { scroll-margin-top: 24px; margin: 56px auto 0; max-width: 900px; text-align: center; }
 .egh-h3 { font-family: var(--ds-font-display); font-weight: 400; font-size: 26px; letter-spacing: -0.01em; color: var(--egh-navy); margin: 6px 0 0; }
 .egh-cat-intro { font-size: 14px; line-height: 1.7; color: var(--egh-navy-2); max-width: 600px; margin: 10px auto 0; }
 .egh-cat-note { font-size: 12.5px; line-height: 1.6; color: var(--egh-azure); max-width: 560px; margin: 10px auto 0; }
