@@ -253,11 +253,11 @@ function HomePage() {
                         </svg>
                     </div>
                 </div>
-                <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideEnt})` }} />
-                <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideCelex})` }} />
-                <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideSorion})` }} />
-                <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideRubit})` }} />
                 <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideGroupPharma})` }} />
+                <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideSorion})` }} />
+                <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideCelex})` }} />
+                <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideRubit})` }} />
+                <div className="egh-hero-slide egh-hero-slide-img" style={{ backgroundImage: `url(${slideEnt})` }} />
             </div>
             <div className="egh-hero-inner">
                 <p className="egh-eyebrow egh-eyebrow-left">Connecting healthcare beyond borders</p>
