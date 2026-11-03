@@ -292,7 +292,7 @@ function HomePage() {
             <p className="egh-lede2">A curated portfolio of certified medical and healthcare products across oral care, dermatology, derma-cosmetics and pharma OTC categories.</p>
             <div className="egh-rangegrid">
                 {productCategories.map((c, i) => (
-                    <Link className="egh-rangecard" to="/products" key={c.title}>
+                    <Link className="egh-rangecard" to={`/products#eghcat-${c.id}`} key={c.title} onClick={() => { const t = `eghcat-${c.id}`; const go = () => { document.getElementById(t)?.scrollIntoView({ behavior: 'auto', block: 'center' }); }; setTimeout(go, 150); setTimeout(go, 900); }}>
                         <span className="egh-rangecard-num" aria-hidden="true">0{i + 1}</span>
                         <span className="egh-rangecard-body">
                             <span className="egh-eyebrow egh-rangecard-tag">{c.tagline}</span>
