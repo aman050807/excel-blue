@@ -146,7 +146,9 @@ const partnerNetwork: { country: string; slug: string; flag: string; distributor
           meta: 'Retail · Doha' },
     ]},
     { country: 'United Arab Emirates', slug: 'united-arab-emirates', flag: flagUae, distributors: [
-        { name: 'Riomed Medical Supplies', logo: logoRiomed,
+        { name: 'RioMed Medical Supplies L.L.C', logo: logoRiomed,
+          tag: 'Supplier and Distributor of Medical Equipment, Instruments & disposables for the UAE and surrounding regions, with wide range of Medical and General products.',
+          meta: 'Ras Al Khor, Dubai, UAE',
           email: 'sales@riomed.ae', phone: '+97143201221', phoneDisplay: '+971 - 4 - 320 1221' },
     ]},
     { country: 'Bahrain', slug: 'bahrain', flag: flagBahrain, distributors: [] },
