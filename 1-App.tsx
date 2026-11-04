@@ -195,18 +195,18 @@ const catCount = (c: ProductCategory) => c.products.length + (c.groups ?? []).re
 const partnerNetwork: { country: string; slug: string; flag: string; distributors: { name: string; logo: string; tag?: string; meta?: string; email?: string; phone?: string; phoneDisplay?: string }[] }[] = [
     { country: 'Oman', slug: 'oman', flag: flagOman, distributors: [
         { name: 'Delta Pharmacy, Division of Bin Zahran United LLC', logo: logoDelta,
-          tag: 'Pharmaceuticals, Cosmetics and Health Care Products - Distribution & Marketing. Retail Pharmacy Operation.',
+          tag: 'Distribution and marketing of Pharmaceuticals, Cosmetics and Healthcare products and retail pharmacy operations.',
           meta: 'Muscat' },
     ]},
     { country: 'Qatar', slug: 'qatar', flag: flagQatar, distributors: [
         { name: 'Family Medical Establishment WLL', logo: logoFamily,
-          tag: 'Pharmaceutical Manufacturing',
+          tag: 'Distribution and marketing of Pharmaceuticals, Cosmetics and Healthcare products and retail pharmacy operations.',
           meta: 'Doha, Qatar' },
         { name: 'Truth Care Pharmacy', logo: logoTruth,
-          tag: 'Truth is our success',
+          tag: 'Distribution and marketing of Pharmaceuticals, Cosmetics and Healthcare products and retail pharmacy operations.',
           meta: 'Retail Pharmacies' },
         { name: 'Aksyr Al Hyah Trading', logo: logoAksyr,
-          tag: 'Elevate Your Well-being, Redefine Opulence: Your Exclusive Heaven for Health and Beauty.',
+          tag: 'Distribution and marketing of Pharmaceuticals, Cosmetics and Healthcare products and retail pharmacy operations.',
           meta: 'Retail · Doha' },
     ]},
     { country: 'United Arab Emirates', slug: 'united-arab-emirates', flag: flagUae, distributors: [
@@ -592,4 +592,4 @@ export function App() {
             </Routes>
         </Chrome>
     </div>;
-            }
+}
