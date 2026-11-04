@@ -27,8 +27,9 @@ import logoTruth from './logo-truth.png';
 import logoAksyr from './logo-aksyr.png';
 import logoRiomed from './logo-riomed.png';
 import phDayNight from './prod-celex-day-night.jpg';
-import phNaturalTouch from './prod-celex-natural-silky.jpg';
-import phSpotReduction from './prod-celex-spot-aqua.jpg';
+import phNaturalTouch from './prod-celex-natural-silky-new.jpg';
+import phSpotReduction from './prod-celex-spot-aqua-new.jpg';
+import phSpotSilky from './prod-celex-spot-silky.jpg';
 import phDermatoneGel from './prod-dermatone-gel.jpg';
 import phDermatoneBar from './prod-dermatone-bar.jpg';
 import phDermatoneFaceCream from './prod-dermatone-face-cream.jpg';
@@ -106,6 +107,7 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Celex Day & Night Cream with SPF': phDayNight,
     'Celex Natural Touch Silky Feel SPF 50+': phNaturalTouch,
     'Celex Spot Reduction Aqua Touch SPF 50+': phSpotReduction,
+    'Celex Spot Reduction Silky Feel SPF 50+': phSpotSilky,
     'Dermatone Lightening Gel': phDermatoneGel,
     'Dermatone Brightening Bar': phDermatoneBar,
     'Dermatone Daily Moisturising Face Cream': phDermatoneFaceCream,
