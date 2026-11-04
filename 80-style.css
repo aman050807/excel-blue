@@ -785,3 +785,13 @@ dialog.egh-dlg::backdrop { background: rgba(13, 27, 46, 0.45); cursor: pointer; 
 @media (prefers-reduced-motion: reduce) and (max-width: 767px) {
     .egh-hero-inner { padding-top: 56px; padding-bottom: calc(50vw + 28px); max-height: none; }
 }
+
+/* Mobile carousel: reserve one stable frame so slide changes cannot move the page. */
+@media (max-width: 767px) {
+    .egh-hero { display: flex; flex-direction: column; animation: none; min-height: 0; max-height: none; }
+    .egh-hero-inner { order: 0; animation: none; opacity: 1; visibility: visible; max-height: none; padding: 56px 32px 28px; overflow: visible; }
+    .egh-hero-slides { order: 1; position: relative; inset: auto; width: 100%; aspect-ratio: 5 / 2; flex: none; }
+    .egh-hero-slide-img { background-size: contain; }
+    .egh-hero-mapwrap { top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; aspect-ratio: auto; transform: none; }
+    .egh-hero-map { object-fit: contain; }
+}
