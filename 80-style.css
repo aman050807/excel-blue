@@ -23,7 +23,7 @@
 .egh-hero-wrap { margin: 0 -24px; container-type: inline-size; }
 .egh-hero {
     margin: 0; position: relative; overflow: hidden; animation: eghHeroBoxD 21s ease-in-out infinite;
-    background: linear-gradient(120deg, #9cc6f6 0%, #5476ea 58%, #47add4 100%);
+    background: linear-gradient(120deg, #c1e6ff 0%, #83b2f5 58%, #70d2ec 100%);
     border-bottom: 1px solid var(--egh-hairline);
 }
 .egh-hero-slides { position: absolute; inset: 0; }
@@ -51,7 +51,7 @@
     0% { opacity: 0; } 1.9% { opacity: 1; } 12.4% { opacity: 1; }
     14.3% { opacity: 0; } 100% { opacity: 0; }
 }
-.egh-hero-slide-map { background: linear-gradient(120deg, #9cc6f6 0%, #5476ea 58%, #47add4 100%); }
+.egh-hero-slide-map { background: linear-gradient(120deg, #c1e6ff 0%, #83b2f5 58%, #70d2ec 100%); }
 .egh-hero-slide-img { background-size: 100% 100%; background-repeat: no-repeat; background-position: center center; background-color: transparent; }
 .egh-hero-mapwrap { position: absolute; top: 50%; right: 2%; transform: translateY(-50%); width: 60%; aspect-ratio: 2 / 1; }
 .egh-hero-map { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.85; }
@@ -755,3 +755,11 @@ dialog.egh-dlg::backdrop { background: rgba(13, 27, 46, 0.45); cursor: pointer; 
 }
 .egh-about .egh-leader-name { font-size: 21px; margin: 22px 0 12px; }
 .egh-about .egh-leader-bio { font-size: 14px; line-height: 1.7; max-width: 340px; }
+
+/* Approved home-page map and pillar-icon brightness update, 4 Nov 2026. */
+.egh-hero-map { opacity: 1; filter: drop-shadow(0 1px 2px rgb(13 43 82 / .14)); }
+.egh-intro .egh-fact-icon { width: 64px; height: 64px; border-radius: 16px; background: #dbeeff; border-color: #93c9ff; color: #086de3; }
+.egh-intro .egh-pillar-img { width: 42px; height: 42px; filter: saturate(1.45) brightness(1.08); }
+.egh-intro .egh-fact-2 .egh-fact-icon { color: #07995a; background: #d5f6e6; border-color: #8bdfb5; }
+.egh-intro .egh-fact-3 .egh-fact-icon { color: #e88410; background: #fff0d5; border-color: #ffd18a; }
+@media (max-width: 767px) { .egh-hero-map { opacity: .65; } }
