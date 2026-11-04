@@ -27,8 +27,8 @@ import logoTruth from './logo-truth.png';
 import logoAksyr from './logo-aksyr.png';
 import logoRiomed from './logo-riomed.png';
 import phDayNight from './prod-celex-day-night.jpg';
-import phNaturalTouch from './prod-celex-natural-touch.jpg';
-import phSpotReduction from './prod-celex-spot-reduction.jpg';
+import phNaturalTouch from './prod-celex-natural-silky.jpg';
+import phSpotReduction from './prod-celex-spot-aqua.jpg';
 import phDermatoneGel from './prod-dermatone-gel.jpg';
 import phDermatoneBar from './prod-dermatone-bar.jpg';
 import phDermatoneFaceCream from './prod-dermatone-face-cream.jpg';
@@ -65,6 +65,8 @@ import phCelexDepig from './prod-celex-depig.jpg';
 import phCelexUnderEye from './prod-celex-under-eye.jpg';
 import phCelexAcneSoap from './prod-celex-acne-soap.jpg';
 import phCelexMoisturisingBar from './prod-celex-moisturising-bar.jpg';
+import phOliveEaseDrops from './prod-olive-ease-drops.jpg';
+import phEarEaseDrops from './prod-ear-ease-drops.jpg';
 import phShyOr from './prod-shy-or.jpg';
 import phShyGel from './prod-shy-gel.jpg';
 import phPediflorDayNight from './prod-pediflor-day-night.jpg';
@@ -134,6 +136,8 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Celex Under Eye Roll On Serum': phCelexUnderEye,
     'Celex Bar for Acne': phCelexAcneSoap,
     'Celex Moisturising Bar': phCelexMoisturisingBar,
+    'Olive-Ease Olive Oil eardrops': phOliveEaseDrops,
+    'Ear Ease Sodium Bicarbonate Eardrops': phEarEaseDrops,
     'SHY OR': phShyOr,
     'SHY Gel': phShyGel,
     'Pediflor Day & Night Kit': phPediflorDayNight,
