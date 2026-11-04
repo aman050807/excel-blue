@@ -141,6 +141,8 @@ export const productCategories: ProductCategory[] = [
         { name: "Ear Ease Sodium Bicarbonate Eardrops", tag: "Ear Ease — Ear Care", desc: "Part of the Ear Ease ear care range. Detailed product information will be added soon.", full: "Part of the Ear Ease ear care range. Detailed product information will be added soon.", highlights: [] },
         { name: "Olive-Ease Olive Oil eardrops", tag: "Olive-Ease — Ear Care", desc: "Part of the Olive-Ease ear care range. Detailed product information will be added soon.", full: "Part of the Olive-Ease ear care range. Detailed product information will be added soon.", highlights: [] },
         { name: "Normal Saline Nasal Drops", tag: "Agrawal Drugs — ENT Care", desc: "Part of the ENT range. Detailed product information will be added soon.", full: "Part of the ENT range. Detailed product information will be added soon.", highlights: [] },
+        { name: "Delsal Normal Saline Nasal Spray", tag: "Agrawal Drugs — ENT Care", desc: "Part of the Delsal nasal care range. Detailed product information will be added soon.", full: "Part of the Delsal nasal care range. Detailed product information will be added soon.", highlights: [] },
+        { name: "Delsal Inhalation Solution", tag: "Agrawal Drugs — ENT Care", desc: "Part of the Delsal respiratory care range. Detailed product information will be added soon.", full: "Part of the Delsal respiratory care range. Detailed product information will be added soon.", highlights: [] },
       ] },
     ],
   },
