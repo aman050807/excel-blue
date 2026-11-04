@@ -34,6 +34,7 @@ import phCelexMoistUrea from './prod-celex-moist-urea.jpg';
 import phSorionSensitive from './prod-sorion-sensitive.jpg';
 import phOrmist from './prod-ormist.jpg';
 import phEthiaspire from './prod-ethiaspire.jpg';
+import phGuardRinse from './prod-guard-rinse.jpg';
 import phDermatoneGel from './prod-dermatone-gel.jpg';
 import phDermatoneBar from './prod-dermatone-bar.jpg';
 import phDermatoneFaceCream from './prod-dermatone-face-cream.jpg';
@@ -116,6 +117,7 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Sorion Sensitive Cream': phSorionSensitive,
     'Ormist': phOrmist,
     'Ethiaspire': phEthiaspire,
+    'Guard Oral Rinse Mouthwash': phGuardRinse,
     'Dermatone Lightening Gel': phDermatoneGel,
     'Dermatone Brightening Bar': phDermatoneBar,
     'Dermatone Daily Moisturising Face Cream': phDermatoneFaceCream,
