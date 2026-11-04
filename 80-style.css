@@ -772,3 +772,11 @@ dialog.egh-dlg::backdrop { background: rgba(13, 27, 46, 0.45); cursor: pointer; 
 }
 
 .egh-intro .egh-fact-icon svg { width: 42px; height: 42px; }
+
+/* Give the supplied product photos more room without stretching labels. */
+.egh-dlg--ointment .egh-dlg-media { padding: 12px; }
+.egh-dlg--rollon .egh-dlg-media--photo img { max-height: 540px; }
+@media (max-width: 767px) {
+    .egh-dlg--rollon .egh-dlg-media--photo img { max-height: 330px; }
+    .egh-dlg--ointment .egh-dlg-media { padding: 10px 10px 0; }
+}
