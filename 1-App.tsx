@@ -55,6 +55,8 @@ import phShyNm from './prod-shy-nm.jpg';
 import phShyXt from './prod-shy-xt.jpg';
 import phGuardOr from './prod-guard-or.jpg';
 import phDensive from './prod-densive.jpg';
+import phShyOr from './1-prod-shy-or.jpg';
+import phShyGel from './2-prod-shy-gel.jpg';
 
 const EMAIL = 'info@excelglobalhealth.com';
 
@@ -108,6 +110,8 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Shy XT': phShyXt,
     'Guard OR Mouthwash': phGuardOr,
     'Densive Denture Cleanser Tablets': phDensive,
+    'SHY OR': phShyOr,
+    'SHY Gel': phShyGel,
 };
 
 const dlgItems: DlgItem[] = [];
