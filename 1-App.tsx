@@ -35,6 +35,8 @@ import phSorionSensitive from './prod-sorion-sensitive.jpg';
 import phOrmist from './prod-ormist.jpg';
 import phEthiaspire from './prod-ethiaspire.jpg';
 import phGuardRinse from './prod-guard-rinse.jpg';
+import phDensivePowder from './prod-densive-powder.jpg';
+import phPediflor1000 from './prod-pediflor-1000.jpg';
 import phDermatoneGel from './prod-dermatone-gel.jpg';
 import phDermatoneBar from './prod-dermatone-bar.jpg';
 import phDermatoneFaceCream from './prod-dermatone-face-cream.jpg';
@@ -118,6 +120,8 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Ormist': phOrmist,
     'Ethiaspire': phEthiaspire,
     'Guard Oral Rinse Mouthwash': phGuardRinse,
+    'Densive Denture Adhesive Powder': phDensivePowder,
+    'Pediflor 1000 ppm': phPediflor1000,
     'Dermatone Lightening Gel': phDermatoneGel,
     'Dermatone Brightening Bar': phDermatoneBar,
     'Dermatone Daily Moisturising Face Cream': phDermatoneFaceCream,
@@ -588,4 +592,4 @@ export function App() {
             </Routes>
         </Chrome>
     </div>;
-}
+            }
