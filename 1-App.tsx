@@ -59,6 +59,10 @@ import phShyNm from './prod-shy-nm.jpg';
 import phShyXt from './prod-shy-xt.jpg';
 import phGuardOr from './prod-guard-or.jpg';
 import phDensive from './prod-densive.jpg';
+import phCelexUvEase from './prod-celex-uv-ease.jpg';
+import phCelexVitc from './prod-celex-vitc.jpg';
+import phCelexDepig from './prod-celex-depig.jpg';
+import phCelexUnderEye from './prod-celex-under-eye.jpg';
 import phShyOr from './prod-shy-or.jpg';
 import phShyGel from './prod-shy-gel.jpg';
 import phPediflorDayNight from './prod-pediflor-day-night.jpg';
@@ -122,6 +126,10 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Shy XT': phShyXt,
     'Guard OR Mouthwash': phGuardOr,
     'Densive Denture Cleanser Tablets': phDensive,
+    'Celex UV-Ease Sunscreen': phCelexUvEase,
+    'Celex Vitamin C Face Serum': phCelexVitc,
+    'Celex Depigmentation Sunscreen': phCelexDepig,
+    'Celex Under Eye Roll On Serum': phCelexUnderEye,
     'SHY OR': phShyOr,
     'SHY Gel': phShyGel,
     'Pediflor Day & Night Kit': phPediflorDayNight,
