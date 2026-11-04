@@ -129,7 +129,6 @@ export const productCategories: ProductCategory[] = [
         { name: "Rubit Liniment", tag: "Rubit — Topical Relief", desc: "Part of the Rubit topical pain relief range. Detailed product information will be added soon.", full: "Part of the Rubit topical pain relief range. Detailed product information will be added soon.", highlights: [] },
         { name: "Rubit Pregnancy", tag: "Rubit — Topical Relief", desc: "Part of the Rubit topical relief range. Detailed product information will be added soon.", full: "Part of the Rubit topical relief range. Detailed product information will be added soon.", highlights: [] },
         { name: "Rubit Kids", tag: "Rubit — Topical Relief", desc: "Part of the Rubit topical relief range. Detailed product information will be added soon.", full: "Part of the Rubit topical relief range. Detailed product information will be added soon.", highlights: [] },
-        { name: "Pain-Off Clove-oil Dental Gel", tag: "Pain-Off — Dental Relief", desc: "Part of the Pain-Off dental relief range. Detailed product information will be added soon.", full: "Part of the Pain-Off dental relief range. Detailed product information will be added soon.", highlights: [] },
         { name: "Pain Off Dental Gel", tag: "Pain Off — Dental Relief", desc: "Pain Off dental gel for rapid toothache relief, 10 g pack.", full: "Pain Off dental gel for rapid toothache relief, 10 g pack.", highlights: [] },
       ] },
       { title: "Cold & Cough Relief", products: [
