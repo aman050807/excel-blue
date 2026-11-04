@@ -183,7 +183,10 @@ const dlgIdByName = new Map(dlgItems.map((d) => [d.name, d.id]));
 
 const openDlg = (id: string) => {
     const dlg = document.getElementById(id) as HTMLDialogElement | null;
-    if (dlg && !dlg.open) dlg.showModal();
+    if (dlg && !dlg.open) {
+        document.querySelectorAll<HTMLDialogElement>('dialog.egh-dlg[open]').forEach((other) => other.close());
+        dlg.showModal();
+    }
 };
 const closeDlg = (id: string) => {
     const dlg = document.getElementById(id) as HTMLDialogElement | null;
@@ -412,7 +415,7 @@ function AboutPage() {
         </section>
 
         <section className="egh-section">
-            <p className="egh-eyebrow">Excel management</p>
+            <p className="egh-eyebrow">Board of Directors</p>
             <h2 className="egh-h2 egh-mgmt-title">The people behind Excel</h2>
             <div className="egh-leaders">
                 {leaders.map((l) => (
@@ -441,7 +444,7 @@ function ProductCard({ p }: { p: ProductDetail }) {
 
 function ProductDialog({ d }: { d: DlgItem }) {
     return (
-        <dialog id={d.id} className="egh-dlg" aria-label={d.name} onClick={(e) => { if (e.target === e.currentTarget) closeDlg(d.id); }}>
+        <dialog id={d.id} className={`egh-dlg${d.name === 'Euclear Baby RollOn' ? ' egh-dlg--rollon' : d.name === 'Rubit Pain Ointment' ? ' egh-dlg--ointment' : ''}`} aria-label={d.name} onClick={(e) => { if (e.target === e.currentTarget) closeDlg(d.id); }}>
             <div className="egh-dlg-card">
                 <button type="button" className="egh-dlg-close" aria-label="Close" onClick={() => closeDlg(d.id)}>&times;</button>
                 <div className={d.photo ? 'egh-dlg-media egh-dlg-media--photo' : 'egh-dlg-media'}><img src={d.photo ?? IMG[d.img]} alt={d.name} /></div>
