@@ -32,6 +32,8 @@ import phSpotReduction from './prod-celex-spot-aqua-new.jpg';
 import phSpotSilky from './prod-celex-spot-silky.jpg';
 import phCelexMoistUrea from './prod-celex-moist-urea.jpg';
 import phSorionSensitive from './prod-sorion-sensitive.jpg';
+import phOrmist from './prod-ormist.jpg';
+import phEthiaspire from './prod-ethiaspire.jpg';
 import phDermatoneGel from './prod-dermatone-gel.jpg';
 import phDermatoneBar from './prod-dermatone-bar.jpg';
 import phDermatoneFaceCream from './prod-dermatone-face-cream.jpg';
@@ -112,6 +114,8 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Celex Spot Reduction Silky Feel SPF 50+': phSpotSilky,
     'Celex Moisturising Cream with Ceramide & Urea': phCelexMoistUrea,
     'Sorion Sensitive Cream': phSorionSensitive,
+    'Ormist': phOrmist,
+    'Ethiaspire': phEthiaspire,
     'Dermatone Lightening Gel': phDermatoneGel,
     'Dermatone Brightening Bar': phDermatoneBar,
     'Dermatone Daily Moisturising Face Cream': phDermatoneFaceCream,
