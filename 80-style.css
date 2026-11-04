@@ -763,8 +763,12 @@ dialog.egh-dlg::backdrop { background: rgba(13, 27, 46, 0.45); cursor: pointer; 
 .egh-intro .egh-fact-2 .egh-fact-icon { color: #07995a; background: #d5f6e6; border-color: #8bdfb5; }
 .egh-intro .egh-fact-3 .egh-fact-icon { color: #e88410; background: #fff0d5; border-color: #ffd18a; }
 @media (max-width: 767px) {
-    .egh-hero-mapwrap { opacity: .26; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 52%, #000 88%); mask-image: linear-gradient(to bottom, transparent 0%, transparent 52%, #000 88%); }
+    .egh-hero-mapwrap { opacity: 1; -webkit-mask-image: none; mask-image: none; width: 100%; left: 0; right: 0; bottom: 12px; }
     .egh-hero-map { opacity: 1; }
+    @keyframes eghHeroTextM {
+        0%, 26.19%, 100% { opacity: 1; visibility: visible; max-height: 1000px; padding-top: 56px; padding-bottom: calc(50vw + 28px); overflow: hidden; }
+        28.095%, 97.62% { opacity: 0; visibility: hidden; max-height: 0; padding-top: 0; padding-bottom: 0; overflow: hidden; }
+    }
 }
 
 .egh-intro .egh-fact-icon svg { width: 42px; height: 42px; }
