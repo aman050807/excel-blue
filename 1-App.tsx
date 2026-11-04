@@ -35,14 +35,14 @@ import phDermatoneFaceCream from './prod-dermatone-face-cream.jpg';
 import phDermacorn from './prod-dermacorn.jpg';
 import phEuclearRollon from './prod-euclear-rollon.jpg';
 import phEuclearLozenges from './prod-euclear-lozenges.jpg';
-import phPainoff from './prod-painoff.jpg';
+import phPainoff from './prod-painoff-new.jpg';
 import phRubitOintment from './prod-rubit-ointment.jpg';
 import phRubitCoolGel from './prod-rubit-cool-gel.jpg';
 import phRubitCramps from './prod-rubit-cramps.jpg';
 import phRubitLiniment from './prod-rubit-liniment.jpg';
 import phRubitPregnancy from './prod-rubit-pregnancy.jpg';
 import phRubitKids from './prod-rubit-kids.jpg';
-import phRubitArthro from './prod-rubit-arthro.jpg';
+import phRubitArthro from './prod-rubit-arthro-new.jpg';
 import phSorionCream from './prod-sorion-cream.jpg';
 import phSorionHeadFluid from './prod-sorion-head-fluid.jpg';
 import phSorionShampoo from './prod-sorion-shampoo.jpg';
@@ -67,6 +67,11 @@ import phCelexAcneSoap from './prod-celex-acne-soap.jpg';
 import phCelexMoisturisingBar from './prod-celex-moisturising-bar.jpg';
 import phOliveEaseDrops from './prod-olive-ease-drops.jpg';
 import phEarEaseDrops from './prod-ear-ease-drops.jpg';
+import phDelsalDrops from './prod-delsal-drops.jpg';
+import phDelsalSpray from './prod-delsal-spray.jpg';
+import phDelsalInhalation from './prod-delsal-inhalation.jpg';
+import phCelexLumiskin from './prod-celex-lumiskin.jpg';
+import phDermascar from './prod-dermascar.jpg';
 import phShyOr from './prod-shy-or.jpg';
 import phShyGel from './prod-shy-gel.jpg';
 import phPediflorDayNight from './prod-pediflor-day-night.jpg';
@@ -138,6 +143,11 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Celex Moisturising Bar': phCelexMoisturisingBar,
     'Olive-Ease Olive Oil eardrops': phOliveEaseDrops,
     'Ear Ease Sodium Bicarbonate Eardrops': phEarEaseDrops,
+    'Normal Saline Nasal Drops': phDelsalDrops,
+    'Delsal Normal Saline Nasal Spray': phDelsalSpray,
+    'Delsal Inhalation Solution': phDelsalInhalation,
+    'Celex Lumiskin Sunscreen': phCelexLumiskin,
+    'Dermascar Gel': phDermascar,
     'SHY OR': phShyOr,
     'SHY Gel': phShyGel,
     'Pediflor Day & Night Kit': phPediflorDayNight,
