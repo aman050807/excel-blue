@@ -55,8 +55,8 @@ import phShyNm from './prod-shy-nm.jpg';
 import phShyXt from './prod-shy-xt.jpg';
 import phGuardOr from './prod-guard-or.jpg';
 import phDensive from './prod-densive.jpg';
-import phShyOr from './1-prod-shy-or.jpg';
-import phShyGel from './2-prod-shy-gel.jpg';
+import phShyOr from './prod-shy-or.jpg';
+import phShyGel from './prod-shy-gel.jpg';
 
 const EMAIL = 'info@excelglobalhealth.com';
 
