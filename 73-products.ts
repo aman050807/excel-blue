@@ -97,7 +97,7 @@ export const productCategories: ProductCategory[] = [
         { name: "Dermatone Brightening Bar", tag: "Dermatone — Skin Brightening", desc: "A gentle syndet cleansing bar infused with Glutathione, Kojic Acid, Aloe Vera, and Vitamin E to cleanse while maintaining pH and providing progressive brightening.", full: "Dermatone Brightening Bar is a gentle syndet cleansing bar infused with Glutathione, Kojic Acid, Aloe Vera, and Vitamin E. It removes impurities and excess sebum while maintaining the skin’s natural pH, providing progressive brightening with every wash.", highlights: ["Gentle syndet cleansing bar","Glutathione & Kojic Acid","Aloe Vera & Vitamin E","Maintains skin natural pH","Progressive brightening"] },
       ] },
       { title: "Advanced Scar Reduction", products: [
-        { name: "Dermascar Gel", tag: "Dermat India — Scar Reduction", desc: "Part of the Dermat India scar care range. Detailed product information will be added soon.", full: "Part of the Dermat India scar care range. Detailed product information will be added soon.", highlights: [] },
+        { name: "Dermascar Gel", tag: "Scar Reduction", desc: "Dermascar Gel is listed in the scar care range. Detailed product information will be added soon.", full: "Dermascar Gel is listed in the scar care range. Detailed product information will be added soon.", highlights: [] },
       ] },
       { title: "For Corns & Warts", products: [
         { name: "Dermacorn Solution", tag: "Dermacorn — Warts & Corns", desc: "Dermacorn Solution for warts and corns, 10 ml, for external use only.", full: "Dermacorn Solution for warts and corns, 10 ml, for external use only.", highlights: [] },
@@ -128,6 +128,8 @@ export const productCategories: ProductCategory[] = [
         { name: "Rubit Liniment", tag: "Rubit — Topical Relief", desc: "Part of the Rubit topical pain relief range. Detailed product information will be added soon.", full: "Part of the Rubit topical pain relief range. Detailed product information will be added soon.", highlights: [] },
         { name: "Rubit Pregnancy", tag: "Rubit — Topical Relief", desc: "Part of the Rubit topical relief range. Detailed product information will be added soon.", full: "Part of the Rubit topical relief range. Detailed product information will be added soon.", highlights: [] },
         { name: "Rubit Kids", tag: "Rubit — Topical Relief", desc: "Part of the Rubit topical relief range. Detailed product information will be added soon.", full: "Part of the Rubit topical relief range. Detailed product information will be added soon.", highlights: [] },
+      ] },
+      { title: "Oral care", products: [
         { name: "Pain Off Dental Gel", tag: "Pain Off — Dental Relief", desc: "Pain Off dental gel for rapid toothache relief, 10 g pack.", full: "Pain Off dental gel for rapid toothache relief, 10 g pack.", highlights: [] },
       ] },
       { title: "Cold & Cough Relief", products: [
@@ -138,9 +140,13 @@ export const productCategories: ProductCategory[] = [
       { title: "ENT Range", products: [
         { name: "Ear Ease Sodium Bicarbonate Eardrops", tag: "Ear Ease — Ear Care", desc: "Ear drops for softening excess ear wax, supplied in a 10 ml pack.", full: "Ear Ease is an ear-drop product for ear-wax softening and ear canal cleansing. The exact Excel product listing identifies a 10 ml pack.", highlights: [] },
         { name: "Olive-Ease Olive Oil eardrops", tag: "Olive-Ease — Ear Care", desc: "Olive oil ear drops for softening hardened ear wax.", full: "Olive-Ease is an olive oil ear-drop product supplied in a 10 ml pack. The exact Excel product listing describes it as an ear-wax softening product.", highlights: [] },
-        { name: "Normal Saline Nasal Drops", tag: "Agrawal Drugs — ENT Care", desc: "Part of the ENT range. Detailed product information will be added soon.", full: "Part of the ENT range. Detailed product information will be added soon.", highlights: [] },
-        { name: "Delsal Normal Saline Nasal Spray", tag: "Agrawal Drugs — ENT Care", desc: "Part of the Delsal nasal care range. Detailed product information will be added soon.", full: "Part of the Delsal nasal care range. Detailed product information will be added soon.", highlights: [] },
-        { name: "Delsal Inhalation Solution", tag: "Agrawal Drugs — ENT Care", desc: "Part of the Delsal respiratory care range. Detailed product information will be added soon.", full: "Part of the Delsal respiratory care range. Detailed product information will be added soon.", highlights: [] },
+      ] },
+      { title: "Normal saline nasal drops & spray", products: [
+        { name: "Normal Saline Nasal Drops", tag: "Delsal — ENT Care", desc: "Part of the ENT range. Detailed product information will be added soon.", full: "Part of the ENT range. Detailed product information will be added soon.", highlights: [] },
+        { name: "Delsal Normal Saline Nasal Spray", tag: "Delsal — ENT Care", desc: "Part of the Delsal nasal care range. Detailed product information will be added soon.", full: "Part of the Delsal nasal care range. Detailed product information will be added soon.", highlights: [] },
+      ] },
+      { title: "Inhalation solution", products: [
+        { name: "Delsal Inhalation Solution", tag: "Delsal — ENT Care", desc: "Part of the Delsal respiratory care range. Detailed product information will be added soon.", full: "Part of the Delsal respiratory care range. Detailed product information will be added soon.", highlights: [] },
       ] },
     ],
   },
