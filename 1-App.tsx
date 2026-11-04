@@ -36,8 +36,12 @@ import phDermacorn from './prod-dermacorn.jpg';
 import phEuclearRollon from './prod-euclear-rollon.jpg';
 import phEuclearLozenges from './prod-euclear-lozenges.jpg';
 import phPainoff from './prod-painoff.jpg';
-import phRubitBalm from './prod-rubit-balm.jpg';
-import phRubitCool from './prod-rubit-cool.jpg';
+import phRubitOintment from './prod-rubit-ointment.jpg';
+import phRubitCoolGel from './prod-rubit-cool-gel.jpg';
+import phRubitCramps from './prod-rubit-cramps.jpg';
+import phRubitLiniment from './prod-rubit-liniment.jpg';
+import phRubitPregnancy from './prod-rubit-pregnancy.jpg';
+import phRubitKids from './prod-rubit-kids.jpg';
 import phRubitArthro from './prod-rubit-arthro.jpg';
 import phSorionCream from './prod-sorion-cream.jpg';
 import phSorionHeadFluid from './prod-sorion-head-fluid.jpg';
@@ -95,8 +99,12 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Euclear Baby RollOn': phEuclearRollon,
     'Euclear Throat Lozenges': phEuclearLozenges,
     'Pain Off Dental Gel': phPainoff,
-    'Rubit Pain Ointment': phRubitBalm,
-    'Rubit Cool Gel': phRubitCool,
+    'Rubit Pain Ointment': phRubitOintment,
+    'Rubit Cool Gel': phRubitCoolGel,
+    'Rubit Cramps': phRubitCramps,
+    'Rubit Liniment': phRubitLiniment,
+    'Rubit Pregnancy': phRubitPregnancy,
+    'Rubit Kids': phRubitKids,
     'Rubit Arthro': phRubitArthro,
     'Sorion Cream': phSorionCream,
     'Sorion Head Fluid': phSorionHeadFluid,
