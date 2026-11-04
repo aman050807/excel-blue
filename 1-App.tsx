@@ -57,6 +57,10 @@ import phGuardOr from './prod-guard-or.jpg';
 import phDensive from './prod-densive.jpg';
 import phShyOr from './prod-shy-or.jpg';
 import phShyGel from './prod-shy-gel.jpg';
+import phPediflorDayNight from './prod-pediflor-day-night.jpg';
+import phPediflorGreenApple from './prod-pediflor-green-apple.jpg';
+import phPediflorMelon from './prod-pediflor-melon.jpg';
+import phPediflorOrange from './prod-pediflor-orange.jpg';
 
 const EMAIL = 'info@excelglobalhealth.com';
 
@@ -112,6 +116,10 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Densive Denture Cleanser Tablets': phDensive,
     'SHY OR': phShyOr,
     'SHY Gel': phShyGel,
+    'Pediflor Day & Night Kit': phPediflorDayNight,
+    'Pediflor Kidz - Green Apple': phPediflorGreenApple,
+    'Pediflor Kidz - Melon': phPediflorMelon,
+    'Pediflor Kidz - Orange': phPediflorOrange,
 };
 
 const dlgItems: DlgItem[] = [];
