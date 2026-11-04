@@ -33,7 +33,7 @@ import phDermatoneGel from './prod-dermatone-gel.jpg';
 import phDermatoneBar from './prod-dermatone-bar.jpg';
 import phDermatoneFaceCream from './prod-dermatone-face-cream.jpg';
 import phDermacorn from './prod-dermacorn.jpg';
-import phEuclearRollon from './prod-euclear-rollon.jpg';
+import phEuclearRollon from './prod-euclear-rollon-new.jpg';
 import phEuclearLozenges from './prod-euclear-lozenges-new.jpg';
 import phEuclearVapocaps from './prod-euclear-vapocaps.jpg';
 import phPainoff from './prod-painoff-new.jpg';
