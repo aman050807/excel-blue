@@ -63,6 +63,8 @@ import phCelexUvEase from './prod-celex-uv-ease.jpg';
 import phCelexVitc from './prod-celex-vitc.jpg';
 import phCelexDepig from './prod-celex-depig.jpg';
 import phCelexUnderEye from './prod-celex-under-eye.jpg';
+import phCelexAcneSoap from './prod-celex-acne-soap.jpg';
+import phCelexMoisturisingBar from './prod-celex-moisturising-bar.jpg';
 import phShyOr from './prod-shy-or.jpg';
 import phShyGel from './prod-shy-gel.jpg';
 import phPediflorDayNight from './prod-pediflor-day-night.jpg';
@@ -130,6 +132,8 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Celex Vitamin C Face Serum': phCelexVitc,
     'Celex Depigmentation Sunscreen': phCelexDepig,
     'Celex Under Eye Roll On Serum': phCelexUnderEye,
+    'Celex Bar for Acne': phCelexAcneSoap,
+    'Celex Moisturising Bar': phCelexMoisturisingBar,
     'SHY OR': phShyOr,
     'SHY Gel': phShyGel,
     'Pediflor Day & Night Kit': phPediflorDayNight,
