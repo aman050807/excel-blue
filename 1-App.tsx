@@ -41,6 +41,7 @@ import phDermatoneGel from './prod-dermatone-gel.jpg';
 import phDermatoneBar from './prod-dermatone-bar.jpg';
 import phDermatoneFaceCream from './prod-dermatone-face-cream.jpg';
 import phDermacorn from './prod-dermacorn.jpg';
+import phAbledentRange from './1-abledent-range.png';
 import phEuclearRollon from './prod-euclear-rollon-new.jpg';
 import phEuclearLozenges from './prod-euclear-lozenges-new.jpg';
 import phEuclearVapocaps from './prod-euclear-vapocaps.jpg';
@@ -111,6 +112,7 @@ type DlgItem = { id: string; img: ImgKey; photo?: string } & ProductDetail;
 import type { ImgKey } from './products';
 
 const PHOTO_BY_NAME: Record<string, string> = {
+    'Abledent Range': phAbledentRange,
     'Celex Day & Night Cream with SPF': phDayNight,
     'Celex Natural Touch Silky Feel SPF 50+': phNaturalTouch,
     'Celex Spot Reduction Aqua Touch SPF 50+': phSpotReduction,
