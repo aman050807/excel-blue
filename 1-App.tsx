@@ -34,7 +34,8 @@ import phDermatoneBar from './prod-dermatone-bar.jpg';
 import phDermatoneFaceCream from './prod-dermatone-face-cream.jpg';
 import phDermacorn from './prod-dermacorn.jpg';
 import phEuclearRollon from './prod-euclear-rollon.jpg';
-import phEuclearLozenges from './prod-euclear-lozenges.jpg';
+import phEuclearLozenges from './prod-euclear-lozenges-new.jpg';
+import phEuclearVapocaps from './prod-euclear-vapocaps.jpg';
 import phPainoff from './prod-painoff-new.jpg';
 import phRubitOintment from './prod-rubit-ointment.jpg';
 import phRubitCoolGel from './prod-rubit-cool-gel.jpg';
@@ -111,6 +112,7 @@ const PHOTO_BY_NAME: Record<string, string> = {
     'Dermacorn Solution': phDermacorn,
     'Euclear Baby RollOn': phEuclearRollon,
     'Euclear Throat Lozenges': phEuclearLozenges,
+    'Euclear Inhalation Vapocaps': phEuclearVapocaps,
     'Pain Off Dental Gel': phPainoff,
     'Rubit Pain Ointment': phRubitOintment,
     'Rubit Cool Gel': phRubitCoolGel,
