@@ -23,7 +23,7 @@
 .egh-hero-wrap { margin: 0 -24px; container-type: inline-size; }
 .egh-hero {
     margin: 0; position: relative; overflow: hidden; animation: eghHeroBoxD 21s ease-in-out infinite;
-    background: linear-gradient(120deg, #c1e6ff 0%, #83b2f5 58%, #70d2ec 100%);
+    background: linear-gradient(165deg, #0d2b52 0%, #123a6e 58%, #164a8a 100%);
     border-bottom: 1px solid var(--egh-hairline);
 }
 .egh-hero-slides { position: absolute; inset: 0; }
@@ -51,8 +51,15 @@
     0% { opacity: 0; } 1.9% { opacity: 1; } 12.4% { opacity: 1; }
     14.3% { opacity: 0; } 100% { opacity: 0; }
 }
-.egh-hero-slide-map { background: linear-gradient(120deg, #c1e6ff 0%, #83b2f5 58%, #70d2ec 100%); }
+.egh-hero-slide-map { background: linear-gradient(165deg, #0d2b52 0%, #123a6e 58%, #164a8a 100%); }
 .egh-hero-slide-img { background-size: 100% 100%; background-repeat: no-repeat; background-position: center center; background-color: transparent; }
+/* Hero animation uses the same deep-blue background as the product-range section;
+   text and buttons switch to the range section's light-on-dark treatment */
+.egh-hero .egh-eyebrow { color: #8fbdf6; }
+.egh-hero .egh-h1 { color: #ffffff; }
+.egh-hero .egh-lede { color: rgb(233 241 252 / .82); }
+.egh-hero .egh-btn-primary, .egh-hero a.egh-btn-primary, .egh-hero a.egh-btn-primary:visited { background: #ffffff !important; color: var(--egh-navy) !important; }
+.egh-hero .egh-btn-ghost { border-color: rgb(255 255 255 / .45); color: #ffffff; background: transparent; }
 .egh-hero-mapwrap { position: absolute; top: 50%; right: 2%; transform: translateY(-50%); width: 60%; aspect-ratio: 2 / 1; }
 .egh-hero-map { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.85; }
 .egh-hero-arcs { position: absolute; inset: 0; width: 100%; height: 100%; }
@@ -794,4 +801,4 @@ dialog.egh-dlg::backdrop { background: rgba(13, 27, 46, 0.45); cursor: pointer; 
     .egh-hero-slide-img { background-size: contain; }
     .egh-hero-mapwrap { top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; aspect-ratio: auto; transform: none; }
     .egh-hero-map { object-fit: contain; }
-}
+                   }
