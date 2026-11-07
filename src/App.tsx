@@ -5,7 +5,7 @@ import globeIcon from './assets/globe.svg';
 import handshakeIcon from './assets/handshake.svg';
 import pageWash from './assets/page-wash.png';
 import logo from './assets/logo.png';
-import shailendra from './assets/shailendra.png';
+import shailendra from './assets/shailendra.jpg';
 import jills from './assets/jills-daniel.png';
 import bannerDerma from './assets/Banner_1.jpeg';
 import bannerEnt from './assets/Banner_2.jpeg';
@@ -224,7 +224,7 @@ const partnerNetwork: { country: string; slug: string; flag: string; distributor
 ];
 
 const leaders = [
-    { img: shailendra, name: 'V M Shailendra', bio: 'Diversified experience ranging from Sales & Marketing as the Regional Head for Novo Nordisk for 14 years and as a banker with ICICI bank, before establishing own pharma distribution business.' },
+    { img: shailendra, imgPos: '50% 22%', name: 'V M Shailendra', bio: 'Diversified experience ranging from Sales & Marketing as the Regional Head for Novo Nordisk for 14 years and as a banker with ICICI bank, before establishing own pharma distribution business.' },
     { img: jills, name: 'Jills Daniel', bio: 'Pharmacist by profession and an extensive international experience, strong interest in innovative medical technologies with 20 years in Diabetes, Point of Care, Critical Care, Dental, Cardiology, Infection Control, Diagnostics Physiotherapy & Pharma.' },
 ];
 
@@ -422,7 +422,7 @@ function AboutPage() {
             <div className="egh-leaders">
                 {leaders.map((l) => (
                     <div className="egh-leader" key={l.name}>
-                        <img className="egh-leader-img" src={l.img} alt={l.name} />
+                        <img className="egh-leader-img" src={l.img} alt={l.name} style={l.imgPos ? { objectPosition: l.imgPos } : undefined} />
                         <p className="egh-leader-name">{l.name}</p>
                         <p className="egh-leader-bio">{l.bio}</p>
                     </div>
