@@ -802,3 +802,25 @@ dialog.egh-dlg::backdrop { background: rgba(13, 27, 46, 0.45); cursor: pointer; 
     .egh-hero-mapwrap { top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; aspect-ratio: auto; transform: none; }
     .egh-hero-map { object-fit: contain; }
                    }
+
+/* Stable hero frame on every screen, 7 Nov 2026. Aman's father saw the hero change
+   height each time the banner images faded in (laptop). The map/text slide and the
+   banner slides now share one constant frame, so the page below never moves.
+   Desktop: the hero keeps the 5:2 banner frame for the whole cycle and the text is
+   vertically centred inside it. Tablet joins the stacked mobile layout: text above a
+   fixed 5:2 slide strip. Banners, imagery and the slide fade timing are untouched. */
+@media (min-width: 1040px) {
+    .egh-hero { animation: none; min-height: 0; max-height: none; height: calc(100cqw * 2 / 5); }
+    .egh-hero-inner {
+        height: 100%; display: flex; flex-direction: column; justify-content: center;
+        padding-top: clamp(36px, 4.5cqw, 72px); padding-bottom: clamp(32px, 4cqw, 64px);
+    }
+}
+@media (min-width: 768px) and (max-width: 1039px) {
+    .egh-hero { display: flex; flex-direction: column; animation: none; min-height: 0; max-height: none; }
+    .egh-hero-inner { order: 0; animation: none; opacity: 1; visibility: visible; max-height: none; padding: 64px 48px 40px; overflow: visible; }
+    .egh-hero-slides { order: 1; position: relative; inset: auto; width: 100%; aspect-ratio: 5 / 2; flex: none; }
+    .egh-hero-slide-img { background-size: contain; }
+    .egh-hero-mapwrap { top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; aspect-ratio: auto; transform: none; }
+    .egh-hero-map { object-fit: contain; }
+}
