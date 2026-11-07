@@ -767,11 +767,15 @@ dialog.egh-dlg::backdrop { background: rgba(13, 27, 46, 0.45); cursor: pointer; 
 .egh-intro .egh-fact-icon { width: 64px; height: 64px; border-radius: 16px; background: #dbeeff; border-color: #93c9ff; color: #086de3; }
 .egh-intro .egh-fact-2 .egh-fact-icon { color: #07995a; background: #d5f6e6; border-color: #8bdfb5; }
 .egh-intro .egh-fact-3 .egh-fact-icon { color: #e88410; background: #fff0d5; border-color: #ffd18a; }
+/* Mobile: map sits behind the hero content as a dimmed backdrop, 7 Nov 2026.
+   Previously the map slide reserved calc(50vw + 28px) below the buttons and
+   pinned the map there at full opacity, so it read as a separate image under
+   the hero. Text stays white over the dark blue; map dimmed for readability. */
 @media (max-width: 767px) {
-    .egh-hero-mapwrap { opacity: 1; -webkit-mask-image: none; mask-image: none; width: 100%; left: 0; right: 0; bottom: 12px; }
-    .egh-hero-map { opacity: 1; }
+    .egh-hero-mapwrap { opacity: 1; -webkit-mask-image: none; mask-image: none; width: 140%; left: 50%; right: auto; top: auto; bottom: -14%; transform: translateX(-50%); }
+    .egh-hero-map { opacity: 0.26; }
     @keyframes eghHeroTextM {
-        0%, 26.19%, 100% { opacity: 1; visibility: visible; max-height: 1000px; padding-top: 56px; padding-bottom: calc(50vw + 28px); overflow: hidden; }
+        0%, 26.19%, 100% { opacity: 1; visibility: visible; max-height: 1000px; padding-top: 56px; padding-bottom: 56px; overflow: hidden; }
         28.095%, 97.62% { opacity: 0; visibility: hidden; max-height: 0; padding-top: 0; padding-bottom: 0; overflow: hidden; }
     }
 }
@@ -787,7 +791,7 @@ dialog.egh-dlg::backdrop { background: rgba(13, 27, 46, 0.45); cursor: pointer; 
 }
 
 @media (prefers-reduced-motion: reduce) and (max-width: 767px) {
-    .egh-hero-inner { padding-top: 56px; padding-bottom: calc(50vw + 28px); max-height: none; }
+    .egh-hero-inner { padding-top: 56px; padding-bottom: 56px; max-height: none; }
 }
 
 /* Stable hero frame on desktop, 7 Nov 2026. Aman's father saw the hero change
