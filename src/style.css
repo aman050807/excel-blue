@@ -214,7 +214,6 @@
     width: 46px; height: 46px; border-radius: 12px; color: var(--egh-azure);
     background: rgb(28 109 217 / .09); border: 1px solid rgb(28 109 217 / .16);
 }
-.egh-pillar-img { width: 26px; height: 26px; }
 .egh-fact-num {
     position: absolute; top: 10px; right: 18px;
     font-family: var(--ds-font-display); font-size: 46px; line-height: 1;
@@ -328,7 +327,6 @@ a.egh-footer-line:hover { text-decoration: underline; }
     .egh-fact-1 .egh-fact-icon { width: 54px; height: 54px; border-radius: 14px; }
     .egh-fact-1 .egh-fact-value { font-size: 27px; margin-top: 20px; }
     .egh-fact-1 .egh-pillar-detail { font-size: 15px; max-width: 300px; }
-    .egh-fact-1 .egh-pillar-img { width: 32px; height: 32px; }
 .egh-fact-num { font-size: 64px; top: 18px; right: 24px; }
     .egh-fact-2, .egh-fact-3 { display: flex; flex-direction: column; justify-content: center; }
     .egh-areas { grid-template-columns: repeat(4, 1fr); }
@@ -767,7 +765,6 @@ dialog.egh-dlg::backdrop { background: rgba(13, 27, 46, 0.45); cursor: pointer; 
 /* Approved home-page map and pillar-icon brightness update, 4 Nov 2026. */
 .egh-hero-map { opacity: 1; filter: drop-shadow(0 1px 2px rgb(13 43 82 / .14)); }
 .egh-intro .egh-fact-icon { width: 64px; height: 64px; border-radius: 16px; background: #dbeeff; border-color: #93c9ff; color: #086de3; }
-.egh-intro .egh-pillar-img { width: 42px; height: 42px; filter: saturate(1.45) brightness(1.08); }
 .egh-intro .egh-fact-2 .egh-fact-icon { color: #07995a; background: #d5f6e6; border-color: #8bdfb5; }
 .egh-intro .egh-fact-3 .egh-fact-icon { color: #e88410; background: #fff0d5; border-color: #ffd18a; }
 @media (max-width: 767px) {
@@ -779,7 +776,7 @@ dialog.egh-dlg::backdrop { background: rgba(13, 27, 46, 0.45); cursor: pointer; 
     }
 }
 
-.egh-intro .egh-fact-icon svg { width: 42px; height: 42px; }
+.egh-intro .egh-fact-icon svg { width: 46px; height: 46px; }
 
 /* Give the supplied product photos more room without stretching labels. */
 .egh-dlg--ointment .egh-dlg-media { padding: 12px; }

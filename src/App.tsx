@@ -1,8 +1,6 @@
 import type { ReactNode } from 'react';
 import './style.css';
 import worldMap from './assets/worldmap.svg';
-import globeIcon from './assets/globe.svg';
-import handshakeIcon from './assets/handshake.svg';
 import pageWash from './assets/page-wash.png';
 import logo from './assets/logo.png';
 import shailendra from './assets/shailendra.jpg';
@@ -97,10 +95,12 @@ const pillars = [
     { name: 'Market Growth', detail: 'Supporting companies as they launch, expand, and grow internationally.' },
 ];
 
+/* Clean stroke icons (Lucide, ISC licence) in each card's accent colour. */
+const pillarIconProps = { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
 const pillarIcons = [
-    <img key="i1" className="egh-pillar-img" src={globeIcon} alt="" />,
-    <img key="i2" className="egh-pillar-img" src={handshakeIcon} alt="" />,
-    <svg key="i3" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"><path d="M4 20.5h18" /><path d="M6.5 16.5l4.5-5 3.5 3 5.5-6.5" /><path d="M15.5 8H20v4.5" /></svg>,
+    <svg key="i1" {...pillarIconProps}><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /><path d="M2 12h20" /></svg>,
+    <svg key="i2" {...pillarIconProps}><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg>,
+    <svg key="i3" {...pillarIconProps}><path d="M16 7h6v6" /><path d="m22 7-8.5 8.5-5-5L2 17" /></svg>,
 ];
 
 import { productCategories } from './products';
