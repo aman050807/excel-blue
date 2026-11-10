@@ -285,8 +285,8 @@ function Chrome({ children }: { children: ReactNode }) {
     </div>;
 }
 
-function PageHead({ eyebrow, title, lede }: { eyebrow: string; title: string; lede?: string }) {
-    return <header className="egh-pagehead">
+function PageHead({ eyebrow, title, lede, modifier }: { eyebrow: string; title: string; lede?: string; modifier?: string }) {
+    return <header className={`egh-pagehead${modifier ? ` ${modifier}` : ""}`}>
         <p className="egh-eyebrow">{eyebrow}</p>
         <h1 className="egh-h2 egh-pagehead-title">{title}</h1>
         {lede && <p className="egh-lede2">{lede}</p>}
@@ -472,7 +472,7 @@ function ProductDialog({ d }: { d: DlgItem }) {
 
 function ProductsPage() {
     return <>
-        <PageHead eyebrow="Products" title="Healthcare solutions for diverse markets" lede="Explore our curated portfolio of certified medical and healthcare products across oral care, dermatology, derma-cosmetics, and pharma OTC categories - trusted by professionals and consumers across international markets." />
+        <PageHead eyebrow="Products" title="Healthcare solutions for diverse markets" modifier="egh-pagehead--products" lede="Explore our curated portfolio of certified medical and healthcare products across oral care, dermatology, derma-cosmetics, and pharma OTC categories - trusted by professionals and consumers across international markets." />
         <nav className="egh-catnav" aria-label="Product categories">
             {productCategories.map((c) => (
                 <button key={c.id} type="button" className="egh-catnav-link" onClick={(e) => { e.preventDefault(); document.getElementById(`eghcat-${c.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>{c.title}</button>
